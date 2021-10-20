@@ -41,7 +41,7 @@ body > button{
     border: none;
 }
 @media(max-width: 580px){
-    body > a{
+    body > button{
         width: 50%;
     }
     #game > div{
