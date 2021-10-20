@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    font: bold 40px Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+#game{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#game > div{
+    background-color: rgb(248, 187, 56);
+    height: 80px;
+    width: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    font: bold 30px Arial, sans-serif;
+    cursor: pointer;
+}
+body > p{
+    font: bold 20px Arial, sans-serif;
+    text-align: center;
+}
+body > button{
+    color: white;
+    font: bold 20px Arial, sans-serif;
+    background-color: rgb(248, 187, 56);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+}
+@media(max-width: 580px){
+    body > a{
+        width: 50%;
+    }
+    #game > div{
+        height: 60px;
+        width: 60px;
+    }
+}
+@media(max-width : 386px){
+    body > a, body > p{
+        font-size: 16px;
+    }
+}
